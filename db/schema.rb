@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150703014125) do
+ActiveRecord::Schema.define(version: 20150703065627) do
 
   create_table "events", force: true do |t|
     t.string   "occasion"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150703014125) do
     t.integer  "day"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "cancelled"
   end
 
 end

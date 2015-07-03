@@ -26,7 +26,7 @@
 </p>
 
 <p>
-  <strong>Cancelled:</strong>
+  <strong>Cancelled or not:</strong>
   <%= @event.cancelled %>
 </p>
 

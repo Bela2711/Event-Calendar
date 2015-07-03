@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :cancelled %><br>
-    <%= f.number_field :cancelled %>
+    <%= f.boolean_field :cancelled %>
   </div>
   <div class="actions">
     <%= f.submit %>
