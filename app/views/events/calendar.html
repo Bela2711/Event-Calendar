@@ -1,5 +1,7 @@
 <div id='calendar'> </div>
 
 <script type="text/javascript">
-$('#calendar').fullCalendar();
+$('#calendar').fullCalendar({
+	events: '/events.json',}
+);
 </script>

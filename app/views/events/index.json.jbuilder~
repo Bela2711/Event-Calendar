@@ -1,4 +1,4 @@
 json.array!(@events) do |event|
-  json.extract! event, :id, :occasion, :invited_count, :year, :month, :day, :cancelled
-  json.url event_url(event, format: :json)
+json.title event.occasion
+json.start event.year.to_s+"-"+event.month.to_s+"-"+event.day.to_s
 end

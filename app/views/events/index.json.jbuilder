@@ -1,3 +1,4 @@
 json.array!(@events) do |event|
-  json.extract! event, :occasion, :invited_count, :year, :month, :day, :cancelled
+json.title event.occasion
+json.start Date.parse(event.year.to_s+"-"+event.month.to_s+"-"+event.day.to_s)
 end

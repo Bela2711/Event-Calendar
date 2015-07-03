@@ -1,0 +1,7 @@
+<div id='calendar'> </div>
+
+<script type="text/javascript">
+$('#calendar').fullCalendar({
+	events: [{title:'Birthday Party',start:'2015-03-14'}],}
+);
+</script>
