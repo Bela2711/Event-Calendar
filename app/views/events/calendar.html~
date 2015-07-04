@@ -7,9 +7,9 @@
 $('#calendar').fullCalendar({
 	events: '/events.json',
 	eventRender: function(event, element) {
-alert(event.title);
         $(element).attr('title',event.invited_count);
-//element.setAttribute('title',event.occasion);		
+	$(element).css("background-color","grey");
+	$(element).css("text-decoration","line-through");
     }
 });
 </script>
