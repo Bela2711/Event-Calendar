@@ -1,7 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
 <div id='calendar'> </div>
 
 <script type="text/javascript">
 $('#calendar').fullCalendar({
-	events: [{title:'Birthday Party',start:'2015-03-14'}],}
-);
+	events: '/events.json',
+	eventRender: function(event, element) {
+alert(event.title);
+        $(element).attr('title',event.invited_count);
+//element.setAttribute('title',event.occasion);		
+    }
+});
 </script>
+</body>
+</html>
